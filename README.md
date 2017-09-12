@@ -17,7 +17,7 @@ where this behavior is not observed.
 
 Node `1` will listen on port `19361`, allowing node `2` to connect to it.
 
-Node `1` will listen on port `19362` and node `2` will listen on port `19543`
+Node `1` will listen on port `19362` and node `2` will listen on port `19553`
 for the JSON-RPC server.
 
 
@@ -34,9 +34,9 @@ $ make start
 ## Check the status of the nodes
 
 ```
-$ make getinfo
+dash-cli -datadir=1  getinfo
 {
-  "version": 120100,
+  "version": 120105,
   "protocolversion": 70206,
   "walletversion": 61000,
   "balance": 0.00000000,
@@ -47,15 +47,15 @@ $ make getinfo
   "proxy": "",
   "difficulty": 4.656542373906925e-10,
   "testnet": false,
-  "keypoololdest": 1486515110,
+  "keypoololdest": 1505216788,
   "keypoolsize": 1001,
   "paytxfee": 0.00000000,
   "relayfee": 0.00010000,
   "errors": ""
 }
-
+dash-cli -datadir=2  getinfo
 {
-  "version": 120100,
+  "version": 120105,
   "protocolversion": 70206,
   "walletversion": 61000,
   "balance": 0.00000000,
@@ -66,7 +66,7 @@ $ make getinfo
   "proxy": "",
   "difficulty": 4.656542373906925e-10,
   "testnet": false,
-  "keypoololdest": 1486515110,
+  "keypoololdest": 1505216930,
   "keypoolsize": 1001,
   "paytxfee": 0.00000000,
   "relayfee": 0.00010000,
