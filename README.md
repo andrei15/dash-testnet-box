@@ -21,11 +21,6 @@ Node `1` will listen on port `19362` and node `2` will listen on port `19553`
 for the JSON-RPC server.
 
 
-## To download the DASH v12.1 binaries.
-```
-$ make download
-```
-
 ## To start the DASH processes
 ```
 $ make start
